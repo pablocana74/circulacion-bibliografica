@@ -52,7 +52,7 @@ Con esos tres archivos produce:
 
 No requiere instalación. Funciona completamente en el navegador.
 
-1. Descarga el archivo `index.html` o accede a la versión en línea: **[[Ver demo](#)](https://pcocana.github.io/Circulacion/)**
+1. Descarga el archivo `index.html` o accede a la versión en línea: **[[Ver demo](https://pcocana.github.io/Circulacion/)]**
 2. Carga los tres archivos Excel en los paneles correspondientes
 3. Completa el período y programa si corresponde
 4. Revisa el dashboard y aplica los filtros que necesites
