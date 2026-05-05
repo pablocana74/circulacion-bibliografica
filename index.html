@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Análisis de Circulación Bibliográfica · Biblioteca PUCV</title>
+<title>Análisis de Circulación Bibliográfica · Biblioteca</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -660,7 +660,7 @@ body {
     <div class="logo-mark">B</div>
     <div class="brand-text">
       <span class="brand-title">Análisis de Circulación Bibliográfica</span>
-      <span class="brand-sub">Biblioteca · Pontificia Universidad Católica de Valparaíso</span>
+      <span class="brand-sub">Biblioteca universitaria</span>
     </div>
   </div>
   <div class="header-right">
@@ -1710,7 +1710,7 @@ function exportarExcel() {
   const carrera = document.getElementById('inputCarrera').value;
 
   const data = [
-    ['Análisis de Circulación Bibliográfica · Biblioteca PUCV'],
+    ['Análisis de Circulación Bibliográfica · Biblioteca'],
     ['Carrera/Programa:', carrera, '', 'Período:', periodo],
     [],
     ['Asignatura','Clave','Tipo','Referencia APA','Título KOHA','Autor KOHA','Signatura','Préstamos del Programa','Préstamos Totales Colección','% Del Programa','Score Match','Estado']
@@ -1746,7 +1746,7 @@ function exportarExcel() {
 
   XLSX.utils.book_append_sheet(wb, ws, 'Análisis Completo');
   agregarResumen(wb, periodo, carrera);
-  XLSX.writeFile(wb, `Circulacion_Bibliografica_${(carrera||'PUCV').replace(/\s+/g,'_')}_${periodo.replace(/[^0-9\-]/g,'')}.xlsx`);
+  XLSX.writeFile(wb, `Circulacion_Bibliografica_${(carrera||'Biblioteca').replace(/\s+/g,'_')}_${periodo.replace(/[^0-9\-]/g,'')}.xlsx`);
 }
 
 function exportarResumen() {
@@ -1754,7 +1754,7 @@ function exportarResumen() {
   const periodo = document.getElementById('inputPeriodo').value;
   const carrera = document.getElementById('inputCarrera').value;
   agregarResumen(wb, periodo, carrera);
-  XLSX.writeFile(wb, `Resumen_Circulacion_${(carrera||'PUCV').replace(/\s+/g,'_')}.xlsx`);
+  XLSX.writeFile(wb, `Resumen_Circulacion_${(carrera||'Biblioteca').replace(/\s+/g,'_')}.xlsx`);
 }
 
 function agregarResumen(wb, periodo, carrera) {
