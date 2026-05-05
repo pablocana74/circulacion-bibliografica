@@ -131,7 +131,7 @@ Este proyecto forma parte de un ecosistema de herramientas de gestión bibliogr�
 
 **Pablo Ocaña**
 Profesional de biblioteca · Biblioteca universitaria
-[pcocana@gmail.com](mailto:pcocana@gmail.com) 
+[pcocana@gmail.com](mailto:pablo.coronel@uniacc.edu) 
 
 ---
 
